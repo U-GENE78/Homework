@@ -11,7 +11,7 @@ int number = int.Parse(Console.ReadLine()!);
 if (number > 99)
 {
     int numberCheck = number;
-    
+
     while (numberCheck >= 1000)
     {
         numberCheck /= 10;
