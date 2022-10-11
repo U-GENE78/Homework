@@ -31,4 +31,4 @@ do
 }
 while (power < 1);
 
-Console.WriteLine($"Number {number} to the power of {power} is {NumToPower(number, power)}\n");
+Console.WriteLine($"\nNumber {number} to the power of {power} is {NumToPower(number, power):N0}\n");
