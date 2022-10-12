@@ -3,7 +3,6 @@
 
 int NumToPower(int num, int pow)
 {
-
     int result = num;
 
     for(int i = 1; i < pow; i++)
