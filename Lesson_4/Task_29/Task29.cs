@@ -58,8 +58,7 @@ int[] GetArray(string numberString, out int count)
             arr[i] = int.Parse(tempNumber);
             count++;
         }
-
-        // Console.Write($"{i} {index} {arr[i]}");
+        
         i++;
     }
 
