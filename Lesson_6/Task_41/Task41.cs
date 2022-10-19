@@ -20,9 +20,9 @@ int[] GetArray(string numberString, out int count)
     int index = 0;
     count = 0;
     int length = numberString.Length;
-    int[] arr = new int[length/2 + 1]; // создаем потенциально избыточный массив 
-                                    //по максимально возможному количеству чисел в строке
-    while (i < length/2 + 1)
+    int[] arr = new int[length / 2 + 1]; // создаем потенциально избыточный массив 
+                                         //по максимально возможному количеству чисел в строке
+    while (i < length / 2 + 1)
     {
         string tempNumber = string.Empty;
         bool flag = false;
@@ -38,7 +38,6 @@ int[] GetArray(string numberString, out int count)
             {
                 if (flag == true)
                 {
-                    index--;
                     break;
                 }
                 else
@@ -58,7 +57,7 @@ int[] GetArray(string numberString, out int count)
             arr[i] = int.Parse(tempNumber);
             count++;
         }
-        
+
         i++;
     }
 
@@ -69,7 +68,7 @@ int[] RemoveEmptyElements(int[] arrayToTrim, int numberOfElements) // убира
 {
     int[] arrayChanged = new int[numberOfElements];
 
-    for(int i = 0; i < numberOfElements; i++)
+    for (int i = 0; i < numberOfElements; i++)
     {
         arrayChanged[i] = arrayToTrim[i];
     }
@@ -81,7 +80,7 @@ int NumberOfPositive(int[] arrayToCheck, int numberOfElements)
 {
     int countPositiveNumbers = 0;
 
-    for(int i = 0; i < numberOfElements; i++)
+    for (int i = 0; i < numberOfElements; i++)
     {
         countPositiveNumbers += arrayToCheck[i] > 0 ? 1 : 0;
     }
@@ -91,8 +90,8 @@ int NumberOfPositive(int[] arrayToCheck, int numberOfElements)
 
 string Print(int[] array)
 {
-   string str = String.Join(" ", array);
-   return str;    
+    string str = String.Join(" ", array);
+    return str;
 }
 
 //////
@@ -111,8 +110,8 @@ else
 {
     int[] array = GetArray(numberString, out int count);
 
-    if(array.Length > count) array = RemoveEmptyElements(array, count);
-    
+    if (array.Length > count) array = RemoveEmptyElements(array, count);
+
     Console.WriteLine($"\nThe array\n{Print(array)}\ncontains {NumberOfPositive(array, count)} positive numbers\n");
 }
 
