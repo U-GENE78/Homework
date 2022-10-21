@@ -35,7 +35,7 @@ int[] TransformArray(int[,] arrayToOneD) // считываем 2-мерный м
     for (int k = 0; k < maxIterate; k++) // количество проходов
     {
 
-        switch (k % 4)
+        switch (k % 4) // определяем направление движения
         {
             case 0:
                 colDirection = 1;
@@ -80,6 +80,8 @@ int[] TransformArray(int[,] arrayToOneD) // считываем 2-мерный м
 
 void Print2DArray(int[,] arrayToPrint)
 {
+    Console.WriteLine();
+
     for (int i = 0; i < arrayToPrint.GetLength(0); i++)
     {
         for (int j = 0; j < arrayToPrint.GetLength(1); j++)
@@ -92,10 +94,13 @@ void Print2DArray(int[,] arrayToPrint)
 
 void Print1DArray(int[] arrayToPrint)
 {
-    for (int i = 0; i < arrayToPrint.GetLength(0); i++)
+    Console.WriteLine();
+
+    for (int i = 0; i < arrayToPrint.GetLength(0) - 1; i++)
     {
         Console.Write($"\t{arrayToPrint[i]:00} ->");
     }
+    Console.Write($"\t{arrayToPrint[arrayToPrint.GetLength(0) - 1]:00 END}");
 }
 
 ///// MAIN ////
