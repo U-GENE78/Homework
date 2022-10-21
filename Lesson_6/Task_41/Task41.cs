@@ -112,6 +112,6 @@ else
 
     if (array.Length > count) array = RemoveEmptyElements(array, count);
 
-    Console.WriteLine($"\nThe array\n{Print(array)}\ncontains {NumberOfPositive(array, count)} positive numbers\n");
+    Console.WriteLine($"\nThe string\n\n{Print(array)}\n\ncontains {NumberOfPositive(array, count)} positive numbers\n");
 }
 
