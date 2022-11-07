@@ -38,10 +38,10 @@ void SearchArray(int[,] array, int number)
             {
                 Console.Write($"\nNumber {number} was found\nROW: {i+1}\nCOLUMN: {j+1}");
                 numberFound = true;
-                break;
+                return;
             }
         }
-        if (numberFound) break;
+        if (numberFound) return;
     }
     if (!numberFound) Console.WriteLine($"\nNumber {number} was not found\n");
 }

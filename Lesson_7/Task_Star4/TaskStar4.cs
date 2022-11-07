@@ -143,7 +143,7 @@ int? ConvertToRoman(string romanValue)
 
 Console.Clear();
 Console.Write("Enter a number in Roman format: ");
-string value = Console.ReadLine();
+string value = Console.ReadLine()!;
 
 string romanValue = value.ToUpper();
 
