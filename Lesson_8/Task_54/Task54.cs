@@ -18,15 +18,17 @@ void SortDescendingMatrix(int[,] array)
     int columns = array.GetLength(1);
 
     int temp;
-    for(int k = 0; k < rows; k++){
-    for(int i = 0; i < columns - 1; i++)
-        for(int j = i + 1; j < columns; j++)
-        if(array[k,j] > array [k,i])
-        {
-            temp = array[k,j];
-            array[k,j] = array[k,i];
-            array[k,i] = temp; 
-        }
+    
+    for (int k = 0; k < rows; k++)
+    {
+        for (int i = 0; i < columns - 1; i++)
+            for (int j = i + 1; j < columns; j++)
+                if (array[k, j] > array[k, i])
+                {
+                    temp = array[k, j];
+                    array[k, j] = array[k, i];
+                    array[k, i] = temp;
+                }
     }
 }
 
