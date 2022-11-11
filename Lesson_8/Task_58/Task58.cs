@@ -56,13 +56,13 @@ int rowsMatrixB, colsMatrixB;
 int minValue;
 int maxValue;
 
-Console.Write("Enter the numer of ROWS in MATRIX A: ");
+Console.Write("Enter the number of ROWS in MATRIX A: ");
 do
 {
     rowsMatrixA = int.Parse(Console.ReadLine()!);
 } while (rowsMatrixA < 1);
 
-Console.Write("Enter the numer of COLUMNS in MATRIX A: ");
+Console.Write("Enter the number of COLUMNS in MATRIX A: ");
 do
 {
     colsMatrixA = int.Parse(Console.ReadLine()!);
@@ -70,9 +70,9 @@ do
 
 
 rowsMatrixB = colsMatrixA; // Автоматическая подстановка, чтобы умножение имело смысл
-Console.Write($"Enter the numer of ROWS in MATRIX B: {rowsMatrixB}\n"); 
+Console.Write($"Enter the number of ROWS in MATRIX B: {rowsMatrixB}\n"); 
 
-Console.Write("Enter the numer of COLUMNS in MATRIX B: ");
+Console.Write("Enter the number of COLUMNS in MATRIX B: ");
 do
 {
     colsMatrixB = int.Parse(Console.ReadLine()!);

@@ -79,13 +79,13 @@ int cols;
 int minValue;
 int maxValue;
 
-Console.Write("Enter the numer of ROWS: ");
+Console.Write("Enter the number of ROWS: ");
 do
 {
     rows = int.Parse(Console.ReadLine()!);
 } while (rows < 1);
 
-Console.Write("Enter the numer of COLUMNS: ");
+Console.Write("Enter the number of COLUMNS: ");
 do
 {
     cols = int.Parse(Console.ReadLine()!);
