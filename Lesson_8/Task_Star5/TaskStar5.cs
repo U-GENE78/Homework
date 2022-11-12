@@ -9,7 +9,7 @@ int SqRoot(int number)
     while(number >= oddNumbers)
     {
         number -= oddNumbers;
-        sqRoot ++;
+        sqRoot++;
         oddNumbers += 2;
     }
 
@@ -21,7 +21,6 @@ int SqRoot(int number)
 Console.Clear();
 
 int number;
-int sqRoot;
 
 Console.Write("Enter a number: ");
 do
