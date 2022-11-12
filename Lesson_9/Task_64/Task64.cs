@@ -18,4 +18,4 @@ do
     maxValue = int.Parse(Console.ReadLine()!);
 } while (maxValue < 1);
 
-Console.WriteLine($"{NumbersDescending(maxValue)}");
+Console.WriteLine($"Here is the sequence:/n{NumbersDescending(maxValue)}");
